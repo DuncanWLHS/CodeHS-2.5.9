@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Bot2Tester
+{
+    public static void main(String[] args) {
+
+        //Put your code here
+        Scanner name = new Scanner(System.in);
+        
+        System.out.println("Hello. What is your name?");
+        String username = name.nextLine();
+        
+        Bot2 User = new Bot2(username);
+        User.greeting();
+        System.out.println("What is your Favorite animal?");
+        String yourAnimal = name.nextLine();
+        User.favoriteAnimal(yourAnimal);
+        System.out.println("Where do you live?");
+        String location = name.nextLine();
+        User.home(location);
+        System.out.println("What is your favorite number?");
+        int yourNumber = name.nextInt();
+        User.favoriteNumber(yourNumber);
+        User.goodbye();
+        
+        
+    }
+}
